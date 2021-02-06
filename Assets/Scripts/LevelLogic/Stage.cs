@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Stage : MonoBehaviour
 {
+    public int pegLit = 0;
+    public List<Peg> bluePegs = new List<Peg>();
     // Start is called before the first frame update
     void Start()
     {

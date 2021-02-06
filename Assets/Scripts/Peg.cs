@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Peg : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public UnityEvent onHit;
+    private bool lit;
+
+    private void OnCollisionEnter2D(Collision2D other) 
     {
-        
+        if (!lit) lit = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
